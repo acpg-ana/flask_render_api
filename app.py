@@ -36,6 +36,10 @@ def criar_usuario():
     usuario = insert_user(nome, email) 
     return f"Dados recebidos!"
 
+app.route("/teste")
+def teste():
+    return "Rota de teste funcionando!"
+
 if __name__ == "__main__":
  app.run(host="0.0.0.0", 
  port = os.environ.get
